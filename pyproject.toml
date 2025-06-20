@@ -1,0 +1,32 @@
+[project]
+name = "nlp_core"
+version = "0.0.1"
+authors = [
+  { name="Daniel Pichardo", email="calmecac.dev@gmail.com" },
+]
+description = "A simple Python library for basic data analysis with pandas."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Data Analysis",
+]
+dependencies = [
+    "pandas>=1.0.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/my_data_lib"
+"Bug Tracker" = "https://github.com/yourusername/my_data_lib/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."] # Search for packages in the current directory
